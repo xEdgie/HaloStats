@@ -1,0 +1,117 @@
+<script type="text/javascript" src="statisticsApi.js"></script>
+
+
+<body>
+    <mat-card id="Card">
+        <h2>Player's Statistics:</h2>
+        <div>
+            <button mat-flat-button color="primary" onclick="Start()">Get Player</button>
+            <mat-form-field color="primary" class="searchBar">
+                <input matInput placeholder="Gamertag" id="searchPlayer"><br>
+            </mat-form-field>
+        </div>
+
+        <!--Player info-->
+        <div>
+            <h2>Player Information : </h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p id="gamertag">Gamertag : </p>
+                    <p id="servicetag">Service Tag : </p>
+                    <p id="company">Spartan Company : </p>
+                </div>
+                <div class="col-md-6">
+                    <p id="spartanrank">Spartan Rank : </p>
+                    <p id="xp">Total XP : </p>
+                    <p id="maxrank">Progress to Max Rank : </p>
+                </div>
+                <!--<mat-progress-bar id="xpbar" color="primary" value="0"></mat-progress-bar>-->
+            </div>
+        </div>
+
+        <!--Arena Stats-->
+        <div>
+            <h2>Arena Statistics : </h2>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <h3 class="gamemodeTitle">Doubles : </h3>
+                    <p id="doublesRank">Rank : </p>
+                    <p id="doublesKDA">KDA : </p>
+                    <p id="doublesKills">Kills : </p>
+                    <p id="doublesDeaths">Deaths : </p>
+                    <p id="doublesAssists">Assists : </p>
+                    <p id="doublesGames">Games Played : </p>
+                    <p id="doublesWins">Wins : </p>
+                    <p id="doublesLoses">Loses : </p>
+                    <p id="doublesTies">Ties : </p>
+                </div>
+
+                <div class="col-md-4">
+                    <h3 class="gamemodeTitle">Elimination : </h3>
+                    <p id="eliminationRank">Rank : </p>
+                    <p id="eliminationKDA">KDA : </p>
+                    <p id="eliminationKills">Kills : </p>
+                    <p id="eliminationDeaths">Deaths : </p>
+                    <p id="eliminationAssists">Assists : </p>
+                    <p id="eliminationGames">Games Played : </p>
+                    <p id="eliminationWins">Wins : </p>
+                    <p id="eliminationLoses">Loses : </p>
+                    <p id="eliminationTies">Ties : </p>
+                </div>
+                
+                <div class="col-md-4">
+                    <h3 class="gamemodeTitle">Mythic Arena : </h3>
+                    <p id="mythicArenaRank">Rank : </p>
+                    <p id="mythicArenaKDA">KDA : </p>
+                    <p id="mythicArenaKills">Kills : </p>
+                    <p id="mythicArenaDeaths">Deaths : </p>
+                    <p id="mythicArenaAssists">Assists : </p>
+                    <p id="mythicArenaGames">Games Played : </p>
+                    <p id="mythicArenaWins">Wins : </p>
+                    <p id="mythicArenaLoses">Loses : </p>
+                    <p id="mythicArenaTies">Ties : </p>
+                </div>
+
+                <div class="col-md-4">
+                    <h3 class="gamemodeTitle">Slayer : </h3>
+                    <p id="slayerRank">Rank : </p>
+                    <p id="slayerKDA">KDA : </p>
+                    <p id="slayerKills">Kills : </p>
+                    <p id="slayerDeaths">Deaths : </p>
+                    <p id="slayerAssists">Assists : </p>
+                    <p id="slayerGames">Games Played : </p>
+                    <p id="slayerWins">Wins : </p>
+                    <p id="slayerLoses">Loses : </p>
+                    <p id="slayerTies">Ties : </p>
+                </div>
+
+                <div class="col-md-4">
+                    <h3 class="gamemodeTitle">Swat : </h3>
+                    <p id="swatRank">Rank : </p>
+                    <p id="swatKDA">KDA : </p>
+                    <p id="swatKills">Kills : </p>
+                    <p id="swatDeaths">Deaths : </p>
+                    <p id="swatAssists">Assists : </p>
+                    <p id="swatGames">Games : </p>
+                    <p id="swatWins">Wins : </p>
+                    <p id="swatLoses">Loses : </p>
+                    <p id="swatTies">Ties : </p>
+                </div>
+
+                <div class="col-md-4">
+                    <h3 class="gamemodeTitle">Team Arena : </h3>
+                    <p id="teamArenaRank">Rank : </p>
+                    <p id="teamArenaKDA">KDA : </p>
+                    <p id="teamArenaKills">Kills : </p>
+                    <p id="teamArenaDeaths">Deaths : </p>
+                    <p id="teamArenaAssists">Assists : </p>
+                    <p id="teamArenaGames">Games Played : </p>
+                    <p id="teamArenaWins">Wins : </p>
+                    <p id="teamArenaLoses">Loses : </p>
+                    <p id="teamArenaTies">Ties : </p>
+                </div>
+            </div>
+        </div>
+    </mat-card>
+</body>
